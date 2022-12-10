@@ -22,7 +22,7 @@ def addFacility():
 # Function to display the menu
 def facilityMenu():
     while True:
-        print("\n 1 - Display Facilities list \n 2 - Add Facility \n 3 - Back to the Main Menu \n")
+        print("Facilities menu \n 1 - Display Facilities list \n 2 - Add Facility \n 3 - Back to the Main Menu \n")
         category = input()
 
         if (category == '1'):
