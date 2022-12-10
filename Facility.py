@@ -18,6 +18,12 @@ def addFacility():
     for i in range(list_length):
         fName = input("\nEnter Facility name: ")
         facilities.append(Facility(fName))
+        
+# Function to write Facilities list to facilities.txt
+def writeListOffacilitiesToFile():
+    with open('facilities.txt', 'w') as f:
+        for i in facilities:
+            f.write('%s\n' %i.fName)
 
 # Function to display the menu
 def facilityMenu():
@@ -29,7 +35,8 @@ def facilityMenu():
             displayFacilities()
         elif (category == '2'):
             addFacility()
-        elif (category == '0'):
+        elif (category == '3'):
+            writeListOffacilitiesToFile()
             break
 
 
